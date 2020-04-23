@@ -22,7 +22,7 @@ import "opentelemetry/proto/resource/v1/resource.proto";
 option java_multiple_files = true;
 option java_package = "io.opentelemetry.proto.metrics.v1";
 option java_outer_classname = "MetricsProto";
-option go_package = "github.com/open-telemetry/opentelemetry-proto/gen/go/metrics/v1";
+option go_package = "github.com/bogdandrutu/opentelemetry-proto/gen/go/metrics/v1";
 
 // A collection of InstrumentationLibraryMetrics from a Resource.
 message ResourceMetrics {
@@ -356,7 +356,7 @@ message SummaryDataPoint {
   // - The 0th percentile is equivalent to the minimum value observed.
   //
   // See the following issue for more context:
-  // https://github.com/open-telemetry/opentelemetry-proto/issues/125
+  // https://github.com/bogdandrutu/opentelemetry-proto/issues/125
   message ValueAtPercentile {
     // The percentile of a distribution. Must be in the interval
     // [0.0, 100.0].

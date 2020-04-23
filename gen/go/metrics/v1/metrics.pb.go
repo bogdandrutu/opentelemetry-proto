@@ -6,12 +6,13 @@ package v1
 import (
 	encoding_binary "encoding/binary"
 	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	v11 "github.com/open-telemetry/opentelemetry-proto/gen/go/common/v1"
-	v1 "github.com/open-telemetry/opentelemetry-proto/gen/go/resource/v1"
 	io "io"
 	math "math"
 	math_bits "math/bits"
+
+	v11 "github.com/bogdandrutu/opentelemetry-proto/gen/go/common/v1"
+	v1 "github.com/bogdandrutu/opentelemetry-proto/gen/go/resource/v1"
+	proto "github.com/golang/protobuf/proto"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.
@@ -993,7 +994,7 @@ func (m *SummaryDataPoint) GetPercentileValues() []*SummaryDataPoint_ValueAtPerc
 // - The 0th percentile is equivalent to the minimum value observed.
 //
 // See the following issue for more context:
-// https://github.com/open-telemetry/opentelemetry-proto/issues/125
+// https://github.com/bogdandrutu/opentelemetry-proto/issues/125
 type SummaryDataPoint_ValueAtPercentile struct {
 	// The percentile of a distribution. Must be in the interval
 	// [0.0, 100.0].

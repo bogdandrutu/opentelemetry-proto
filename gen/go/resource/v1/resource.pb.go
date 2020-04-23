@@ -5,8 +5,8 @@ package v1
 
 import (
 	fmt "fmt"
+	v1 "github.com/bogdandrutu/opentelemetry-proto/gen/go/common/v1"
 	proto "github.com/golang/protobuf/proto"
-	v1 "github.com/open-telemetry/opentelemetry-proto/gen/go/common/v1"
 	io "io"
 	math "math"
 	math_bits "math/bits"

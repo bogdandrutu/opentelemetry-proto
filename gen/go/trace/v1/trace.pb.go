@@ -6,9 +6,9 @@ package v1
 import (
 	encoding_binary "encoding/binary"
 	fmt "fmt"
+	v11 "github.com/bogdandrutu/opentelemetry-proto/gen/go/common/v1"
+	v1 "github.com/bogdandrutu/opentelemetry-proto/gen/go/resource/v1"
 	proto "github.com/golang/protobuf/proto"
-	v11 "github.com/open-telemetry/opentelemetry-proto/gen/go/common/v1"
-	v1 "github.com/open-telemetry/opentelemetry-proto/gen/go/resource/v1"
 	io "io"
 	math "math"
 	math_bits "math/bits"
