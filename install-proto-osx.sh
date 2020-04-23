@@ -17,7 +17,12 @@ wget https://github.com/protocolbuffers/protobuf/releases/download/v3.9.1/protoc
     && unzip protoc-3.9.1-osx-x86_64.zip \
     && sudo ln -s -f ${DIR}/bin/protoc /usr/local/bin/protoc
 
-GIT_TAG="v1.3.2"
+GIT_TAG_GOOGLE="v1.3.2"
 go get -d -u github.com/golang/protobuf/protoc-gen-go
-git -C "$(go env GOPATH)"/src/github.com/golang/protobuf checkout $GIT_TAG
+git -C "$(go env GOPATH)"/src/github.com/golang/protobuf checkout $GIT_TAG_GOOGLE
 go install github.com/golang/protobuf/protoc-gen-go
+
+GIT_TAG_GOGO="v1.3.1"
+go get -d -u github.com/gogo/protobuf/protoc-gen-gofast
+git -C "$(go env GOPATH)"/src/github.com/gogo/protobuf checkout $GIT_TAG_GOGO
+go install github.com/gogo/protobuf/protoc-gen-gofast
